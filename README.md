@@ -1,5 +1,6 @@
 Welcome
-Bash scripts that I've written over the years, this is a repository for several projects that I've created with linux bash mostly for IT. 
+
+These are some bash scripts that I've written over the years, this is a repository for several projects that I've created with linux bash mostly for IT. 
 
 To clone this repository, go ahead and try: 
   $ git clone https://github.com/mental1234/bashfiles.git
