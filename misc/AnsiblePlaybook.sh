@@ -33,6 +33,7 @@ if [ -z ${PLAYBOOK_TITLE} ]; then
 fi
 
 # Creating structure for layout
+mkdir ${PLAYBOOK_PATH}
 mkdir -p "${PLAYBOOK_PATH}/files"
 mkdir -p "${PLAYBOOK_PATH}/group_vars"
 mkdir -p "${PLAYBOOK_PATH}/host_vars/dev"
@@ -43,7 +44,8 @@ mkdir -p "${PLAYBOOK_PATH}/roles"
 
 #Use ansible galaxi init to create a default 'common role'
 cd ${PLAYBOOK_PATH}/roles && ansible-galaxy init common 
-touch "${PLAYBOOK_PATH}/inventories/dev"
-touch "${PLAYBOOK_PATH}/inventories/uat"
-touch "${PLAYBOOK_PATH}/inventories/prd"
-touch "${PLAYBOOK_PATH}/${PLAYBOOK_TITLE}.yml"
+cd ..
+touch "inventories/dev"
+touch "inventories/uat"
+touch "inventories/prd"
+touch "${PLAYBOOK_TITLE}.yml"
