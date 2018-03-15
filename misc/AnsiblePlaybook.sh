@@ -42,7 +42,7 @@ mkdir -p "${PLAYBOOK_PATH}/inventories"
 mkdir -p "${PLAYBOOK_PATH}/roles"
 
 #Use ansible galaxi init to create a default 'common role'
-cd roles && ansible-galaxy init common 
+cd ${PLAYBOOK_PATH}/roles && ansible-galaxy init common 
 touch "${PLAYBOOK_PATH}/inventories/dev"
 touch "${PLAYBOOK_PATH}/inventories/uat"
 touch "${PLAYBOOK_PATH}/inventories/prd"
